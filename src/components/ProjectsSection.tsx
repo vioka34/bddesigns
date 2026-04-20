@@ -12,17 +12,17 @@ const projects: Project[] = [
   {
     title: 'CrossFit Pulse',
     desc: 'Remade a local gym website with stronger conversion flow, pricing clarity, and high-impact visual hierarchy.',
-    image: 'https://motionsites.ai/assets/hero-evr-ventures-preview-DZxeVFEX.gif',
+    image: '/gifs/crossfit-pulse.gif',
   },
   {
     title: 'JJ Dominican Barbershop',
     desc: 'Professional service layout with photo-driven trust and frictionless booking experience for mobile users.',
-    image: 'https://motionsites.ai/assets/hero-automation-machines-preview-DlTveRIN.gif',
+    image: '/gifs/jj-dominican.gif',
   },
   {
     title: 'Plumbing Rite',
     desc: 'Trade-service site optimized for urgent leads, clear service tiers, and regional trust positioning.',
-    image: 'https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif',
+    image: '/gifs/plumbing-rite.gif',
   },
 ]
 
