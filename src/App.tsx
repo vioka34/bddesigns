@@ -23,66 +23,41 @@ function HeroSection() {
   const { ref, isVisible } = useInViewAnimation<HTMLDivElement>()
 
   return (
-    <section ref={ref} id="about" className="relative max-w-6xl mx-auto px-6 pt-12 md:pt-16 pb-8">
-      <div className="absolute -top-24 right-0 w-72 h-72 rounded-full bg-white/10 blur-3xl animate-pulse" />
-      <div className="absolute top-24 -left-16 w-64 h-64 rounded-full bg-white/10 blur-3xl animate-pulse" />
+    <section ref={ref} id="about" className="relative max-w-7xl mx-auto px-6 pt-10 md:pt-14 pb-10">
+      <div className="hero-sparkles absolute inset-0 pointer-events-none" />
 
-      <div className="relative z-10 rounded-[34px] border border-zinc-800 bg-zinc-950/80 p-6 md:p-10 backdrop-blur-sm">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-14 lg:items-end">
-          <div className="lg:flex-1">
-            <h1 className={`${visibleClass(isVisible)} punk-flicker font-['PP_Mondwest'] text-[36px] md:text-[52px] lg:text-[64px] font-semibold text-zinc-100 tracking-tight mb-4`} style={{ animationDelay: '0.1s' }}>
-              BDdesigns
-            </h1>
-            <p className={`${visibleClass(isVisible)} font-mono text-xs md:text-sm text-zinc-400 mb-3`} style={{ animationDelay: '0.2s' }}>
-              Independent studio for local business websites
-            </p>
-            <h2 className={`${visibleClass(isVisible)} text-[34px] md:text-[52px] lg:text-[72px] leading-[0.98] tracking-tight text-zinc-100`} style={{ animationDelay: '0.3s' }}>
-              <span className="font-['PP_Mondwest']">Magnetic websites</span>
-              <br />
-              that make people buy.
-            </h2>
+      <div className="relative z-10 grid lg:grid-cols-[1.2fr_0.9fr] gap-8 lg:gap-10 items-center rounded-[36px] border border-zinc-800 bg-zinc-950/85 p-6 md:p-10">
+        <div>
+          <p className={`${visibleClass(isVisible)} font-mono text-xs md:text-sm text-zinc-400 mb-3`} style={{ animationDelay: '0.1s' }}>
+            punk web studio • high-conversion local sites
+          </p>
 
-            <div className={`${visibleClass(isVisible)} mt-6 flex flex-col gap-5 text-sm md:text-base text-zinc-300 leading-relaxed max-w-2xl`} style={{ animationDelay: '0.4s' }}>
-              <p>
-                We craft black-belt branding experiences for local businesses —
-                crisp motion, smart structure, and conversion-first storytelling.
-              </p>
-              <p>
-                You get a site that feels premium, moves with confidence, and makes your offer impossible to ignore.
-              </p>
-            </div>
+          <h1 className={`${visibleClass(isVisible)} font-['PP_Mondwest'] text-[38px] md:text-[56px] lg:text-[76px] leading-[0.95] text-zinc-100`} style={{ animationDelay: '0.2s' }}>
+            BDdesigns
+            <span className="block text-zinc-300"> loud look.</span>
+            <span className="block text-zinc-100"> serious results.</span>
+          </h1>
 
-            <div className={`${visibleClass(isVisible)} flex flex-col sm:flex-row gap-3 md:gap-4 mt-7`} style={{ animationDelay: '0.5s' }}>
-              <Button href="#contact">Start a chat</Button>
-              <Button href="#work" variant="secondary">View projects</Button>
-            </div>
+          <p className={`${visibleClass(isVisible)} mt-6 max-w-2xl text-sm md:text-base text-zinc-300 leading-relaxed`} style={{ animationDelay: '0.3s' }}>
+            We make premium, bold websites for local businesses that want attention and bookings.
+            Distinct brand vibe, clean structure, and motion that actually feels expensive.
+          </p>
+
+          <div className={`${visibleClass(isVisible)} mt-7 flex flex-col sm:flex-row gap-3 md:gap-4`} style={{ animationDelay: '0.4s' }}>
+            <Button href="#contact">Start a chat</Button>
+            <Button href="#work" variant="secondary">View projects</Button>
           </div>
+        </div>
 
-          <div className={`${visibleClass(isVisible)} lg:w-[360px] rounded-3xl border border-zinc-800 bg-black p-5`} style={{ animationDelay: '0.6s' }}>
-            <p className="text-zinc-400 text-xs uppercase tracking-[0.2em]">Sparkline impact</p>
-            <div className="mt-4 h-24 relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950">
-              <svg viewBox="0 0 300 80" className="w-full h-full">
-                <polyline
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="2"
-                  points="0,68 30,62 60,58 90,50 120,48 150,36 180,32 210,22 240,20 270,12 300,8"
-                >
-                  <animate
-                    attributeName="points"
-                    dur="4s"
-                    repeatCount="indefinite"
-                    values="0,68 30,62 60,58 90,50 120,48 150,36 180,32 210,22 240,20 270,12 300,8;
-                            0,66 30,61 60,53 90,49 120,41 150,35 180,30 210,24 240,18 270,13 300,9;
-                            0,68 30,62 60,58 90,50 120,48 150,36 180,32 210,22 240,20 270,12 300,8"
-                  />
-                </polyline>
-              </svg>
-            </div>
-            <div className="mt-4 flex items-center gap-2 text-zinc-200 text-sm">
-              <span className="spark-dot" />
-              <span>Sparkles + animated hero system enabled</span>
-            </div>
+        <div className={`${visibleClass(isVisible)} relative h-[330px] md:h-[420px]`} style={{ animationDelay: '0.45s' }}>
+          <div className="hero-card hero-card-a">
+            <img src="/gifs/luxury-skincare.gif" alt="Luxury skincare preview" className="hero-card-img" />
+          </div>
+          <div className="hero-card hero-card-b">
+            <img src="/gifs/jj-dominican.gif" alt="Barbershop preview" className="hero-card-img" />
+          </div>
+          <div className="hero-card hero-card-c">
+            <img src="/gifs/serenity-touch.gif" alt="Massage preview" className="hero-card-img" />
           </div>
         </div>
       </div>

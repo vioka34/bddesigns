@@ -13,7 +13,7 @@ type ButtonProps = {
 
 const variantMap: Record<Variant, string> = {
   primary:
-    'bg-black text-white border border-white/60 shadow-[0_0_0_1px_rgba(255,255,255,0.25),0_0_18px_rgba(255,255,255,0.18),inset_0_0_12px_rgba(255,255,255,0.09)] punk-flicker',
+    'bg-black text-white border border-white/60 shadow-[0_0_0_1px_rgba(255,255,255,0.25),0_0_18px_rgba(255,255,255,0.18),inset_0_0_12px_rgba(255,255,255,0.09)]',
   secondary:
     'bg-zinc-900 text-zinc-100 border border-zinc-700 shadow-[0_0_0_0.5px_rgba(255,255,255,0.12),0_4px_30px_rgba(0,0,0,0.55)]',
   tertiary:
