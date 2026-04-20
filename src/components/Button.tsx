@@ -19,9 +19,9 @@ const variantMap: Record<Variant, string> = {
 }
 
 const glassBgMap: Record<Variant, string> = {
-  primary: 'rgba(255,255,255,0.22)',
-  secondary: 'rgba(255,255,255,0.16)',
-  tertiary: 'rgba(255,255,255,0.16)',
+  primary: 'rgba(255,255,255,0.26)',
+  secondary: 'rgba(255,255,255,0.18)',
+  tertiary: 'rgba(255,255,255,0.18)',
 }
 
 export default function Button({ children, href, variant = 'primary', className = '', style, target, rel }: ButtonProps) {
@@ -34,7 +34,7 @@ export default function Button({ children, href, variant = 'primary', className 
   return (
     <a href={href} target={target} rel={rel} className="inline-block">
       <div
-        className={`group relative flex items-center justify-center overflow-hidden rounded-full px-7 py-3 text-sm md:text-base font-semibold transition-all duration-700 hover:-translate-y-0.5 ${variantMap[variant]} ${className}`}
+        className={`group relative flex items-center justify-center overflow-hidden rounded-full px-7 py-3 text-sm md:text-base font-semibold transition-all duration-700 hover:-translate-y-0.5 hover:scale-[1.02] ${variantMap[variant]} ${className}`}
         style={glassStyle}
       >
         <div
@@ -53,19 +53,19 @@ export default function Button({ children, href, variant = 'primary', className 
           className="absolute inset-0 z-20 rounded-[inherit]"
           style={{
             boxShadow:
-              'inset 2px 2px 1px 0 rgba(255,255,255,0.5), inset -1px -1px 1px 1px rgba(255,255,255,0.35)',
+              'inset 2px 2px 1px 0 rgba(255,255,255,0.6), inset -1px -1px 1px 1px rgba(255,255,255,0.38)',
           }}
         />
 
         <div
-          className="absolute inset-0 z-20 rounded-[inherit] opacity-70"
+          className="absolute inset-0 z-20 rounded-[inherit] opacity-80"
           style={{
             background:
-              'linear-gradient(to bottom, rgba(255,255,255,0.22), rgba(255,255,255,0.02) 55%, rgba(255,255,255,0.06))',
+              'linear-gradient(to bottom, rgba(255,255,255,0.26), rgba(255,255,255,0.03) 52%, rgba(255,255,255,0.08))',
           }}
         />
 
-        <div className="relative z-30 transition-all duration-700 group-hover:scale-95">{children}</div>
+        <div className="relative z-30 transition-all duration-700 group-hover:scale-[0.96]">{children}</div>
       </div>
     </a>
   )

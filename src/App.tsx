@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import Lenis from 'lenis'
 import { useInViewAnimation } from './hooks/useInViewAnimation'
 import Button from './components/Button'
 import PricingSection from './components/PricingSection'
@@ -87,6 +89,28 @@ function MarqueeSection() {
 
 export default function App() {
   const { ref: footerRef, isVisible: footerVisible } = useInViewAnimation<HTMLDivElement>()
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.15,
+      smoothWheel: true,
+      wheelMultiplier: 0.9,
+      touchMultiplier: 1.1,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    })
+
+    let raf = 0
+    const loop = (time: number) => {
+      lenis.raf(time)
+      raf = requestAnimationFrame(loop)
+    }
+    raf = requestAnimationFrame(loop)
+
+    return () => {
+      cancelAnimationFrame(raf)
+      lenis.destroy()
+    }
+  }, [])
 
   return (
     <div className="bg-black text-zinc-100 antialiased punk-noise">
