@@ -72,7 +72,7 @@ export default function TestimonialCarousel({ visibleClass }: { visibleClass: Vi
     <section ref={ref} className="w-full py-20 overflow-hidden">
       <div className="px-6 md:max-w-4xl md:ml-auto flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <h2 className={`${visibleClass(isVisible, '0.1s')} text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] tracking-tight text-zinc-100`}>
-          What <span className="font-['PP_Mondwest']">builders</span> say
+          What <span className="font-['Times_New_Roman']">builders</span> say
         </h2>
         <div className={`${visibleClass(isVisible, '0.2s')} flex items-center gap-2 text-zinc-200`}>
           {Array.from({ length: 5 }).map((_, i) => (

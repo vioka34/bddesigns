@@ -9,7 +9,7 @@ export default function PricingSection({ visibleClass }: { visibleClass: Visible
   return (
     <section ref={ref} id="services" className="w-full py-14 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className={`${visibleClass(isVisible, '0.1s')} font-['PP_Mondwest'] text-4xl md:text-5xl text-zinc-100 mb-3`}>
+        <h2 className={`${visibleClass(isVisible, '0.1s')} font-['Times_New_Roman'] text-4xl md:text-5xl text-zinc-100 mb-3`}>
           Pricing that actually makes sense
         </h2>
         <p className={`${visibleClass(isVisible, '0.2s')} text-zinc-400 mb-8`}>

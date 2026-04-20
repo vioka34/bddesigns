@@ -11,7 +11,7 @@ export default function ImpactShowcase({ visibleClass }: { visibleClass: Visible
       <div className="max-w-6xl mx-auto rounded-[36px] border border-zinc-800 bg-zinc-950 p-6 md:p-10 shadow-[0_0_50px_rgba(255,255,255,0.06)]">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <h2 className={`${visibleClass(isVisible, '0.1s')} text-[34px] md:text-[48px] leading-[1.05] text-zinc-100`}>
-            Built to <span className="font-['PP_Mondwest']">impress</span>,
+            Built to <span className="font-['Times_New_Roman']">impress</span>,
             <br /> engineered to convert.
           </h2>
           <p className={`${visibleClass(isVisible, '0.2s')} text-zinc-400 max-w-md`}>

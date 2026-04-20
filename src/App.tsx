@@ -34,9 +34,9 @@ function HeroSection() {
             studio availability this month
           </div>
 
-          <h1 className={`${visibleClass(isVisible)} mt-4 font-['PP_Mondwest'] text-[40px] md:text-[58px] lg:text-[82px] leading-[0.92] text-zinc-100`} style={{ animationDelay: '0.18s' }}>
+          <h1 className={`${visibleClass(isVisible)} mt-4 font-['Times_New_Roman'] text-[40px] md:text-[58px] lg:text-[82px] leading-[0.92] text-zinc-100`} style={{ animationDelay: '0.18s' }}>
             BDdesigns
-            <span className="block font-['PP_Neue_Montreal'] text-zinc-300 tracking-tight">Build the next wave,</span>
+            <span className="block font-sans text-zinc-300 tracking-tight">Build the next wave,</span>
             <span className="block text-zinc-100">the bold way.</span>
           </h1>
 

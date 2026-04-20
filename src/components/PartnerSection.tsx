@@ -85,7 +85,7 @@ export default function PartnerSection({ visibleClass }: { visibleClass: Visible
       >
         {sparkEls}
         <div className="relative z-10 text-center">
-          <h2 className={`${visibleClass(isVisible, '0.1s')} font-['PP_Mondwest'] text-[48px] md:text-[64px] lg:text-[80px] text-zinc-100 mb-12`}>
+          <h2 className={`${visibleClass(isVisible, '0.1s')} font-['Times_New_Roman'] text-[48px] md:text-[64px] lg:text-[80px] text-zinc-100 mb-12`}>
             Partner with us
           </h2>
           <Button href="#contact" className={`${visibleClass(isVisible, '0.2s')} inline-flex items-center gap-3`}>

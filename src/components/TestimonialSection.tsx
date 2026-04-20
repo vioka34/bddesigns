@@ -44,7 +44,7 @@ export default function TestimonialSection({ visibleClass }: { visibleClass: Vis
     <section ref={ref} className="py-12 px-6 max-w-2xl mx-auto">
       <Quote className={`${visibleClass(isVisible, '0.1s')} w-6 h-6 text-zinc-100`} style={{ animationDelay: '0.1s' }} />
       <h2 className={`${visibleClass(isVisible, '0.2s')} mt-6 text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] tracking-tight text-zinc-100`} style={{ animationDelay: '0.2s' }}>
-        I left <span className="font-['PP_Mondwest']">Apple</span> to build the studio I always wanted to work with.
+        I left <span className="font-['Times_New_Roman']">Apple</span> to build the studio I always wanted to work with.
       </h2>
       <p className={`${visibleClass(isVisible, '0.3s')} mt-4 text-sm italic text-zinc-400`} style={{ animationDelay: '0.3s' }}>Brandon Dillon</p>
 

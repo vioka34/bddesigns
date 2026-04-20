@@ -9,7 +9,7 @@ export default function Footer({ visibleClass, isVisible }: { visibleClass: Visi
       <div className="rounded-[28px] border border-zinc-800 bg-zinc-950 p-6 md:p-8">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
           <div>
-            <h3 className={`${visibleClass(isVisible, '0.1s')} font-['PP_Mondwest'] text-3xl text-zinc-100`}>
+            <h3 className={`${visibleClass(isVisible, '0.1s')} font-['Times_New_Roman'] text-3xl text-zinc-100`}>
               Let’s build your next site.
             </h3>
             <p className={`${visibleClass(isVisible, '0.12s')} text-zinc-400 mt-2 max-w-md`}>

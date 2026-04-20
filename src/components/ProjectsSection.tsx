@@ -51,7 +51,7 @@ function FancyCard({ project, idx, visibleClass }: { project: Project; idx: numb
 
       <div className="relative z-10">
         <div className="mb-4">
-          <h3 className="font-['PP_Mondwest'] text-xl md:text-2xl text-zinc-100">{project.title}</h3>
+          <h3 className="font-['Times_New_Roman'] text-xl md:text-2xl text-zinc-100">{project.title}</h3>
           <p className="mt-2 text-sm md:text-base text-zinc-400 leading-relaxed">{project.desc}</p>
         </div>
 
@@ -72,7 +72,7 @@ export default function ProjectsSection({ visibleClass }: { visibleClass: Visibl
   return (
     <section id="work" className="max-w-[1280px] px-6 py-16 mx-auto">
       <div className="mb-10 md:mb-14 text-center">
-        <h2 className="font-['PP_Mondwest'] text-4xl md:text-6xl text-zinc-100">Featured builds</h2>
+        <h2 className="font-['Times_New_Roman'] text-4xl md:text-6xl text-zinc-100">Featured builds</h2>
         <p className="mt-3 text-zinc-400 max-w-2xl mx-auto">
           Not a basic stack of screenshots — this is a layered showcase wall with motion, contrast, and premium framing.
         </p>
