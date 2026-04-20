@@ -27,30 +27,37 @@ function HeroSection() {
     <section ref={ref} id="about" className="relative max-w-7xl mx-auto px-6 pt-10 md:pt-16 pb-12">
       <div className="hero-sparkles absolute inset-0 pointer-events-none" />
 
-      <div className="relative z-10 grid lg:grid-cols-[1.08fr_0.92fr] gap-8 lg:gap-10 items-center rounded-[36px] border border-zinc-800 bg-zinc-950/90 p-6 md:p-10">
+      <div className="relative z-10 grid lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-10 items-center rounded-[36px] border border-zinc-800 bg-zinc-950/90 p-6 md:p-10">
         <div>
-          <p className={`${visibleClass(isVisible)} font-mono text-xs md:text-sm text-zinc-400 mb-4`} style={{ animationDelay: '0.08s' }}>
-            punk web studio • smooth motion • local conversion
-          </p>
+          <div className={`${visibleClass(isVisible)} inline-flex items-center gap-2 rounded-full border border-zinc-700 bg-zinc-900/70 px-3 py-1 text-[11px] tracking-[0.16em] uppercase text-zinc-300`} style={{ animationDelay: '0.08s' }}>
+            <span className="w-1.5 h-1.5 rounded-full bg-white" />
+            studio availability this month
+          </div>
 
-          <h1 className={`${visibleClass(isVisible)} font-['PP_Mondwest'] text-[40px] md:text-[58px] lg:text-[84px] leading-[0.92] text-zinc-100`} style={{ animationDelay: '0.18s' }}>
+          <h1 className={`${visibleClass(isVisible)} mt-4 font-['PP_Mondwest'] text-[40px] md:text-[58px] lg:text-[82px] leading-[0.92] text-zinc-100`} style={{ animationDelay: '0.18s' }}>
             BDdesigns
-            <span className="block text-zinc-300">bold visuals.</span>
-            <span className="block text-zinc-100">real customers.</span>
+            <span className="block font-['PP_Neue_Montreal'] text-zinc-300 tracking-tight">Build the next wave,</span>
+            <span className="block text-zinc-100">the bold way.</span>
           </h1>
 
-          <p className={`${visibleClass(isVisible)} mt-6 max-w-2xl text-sm md:text-base text-zinc-300 leading-relaxed`} style={{ animationDelay: '0.3s' }}>
-            We build websites that feel premium and sell hard — modern animation, clean structure, and messaging that moves people to book.
+          <p className={`${visibleClass(isVisible)} mt-5 max-w-2xl text-sm md:text-base text-zinc-300 leading-relaxed`} style={{ animationDelay: '0.3s' }}>
+            We design high-conversion websites for local businesses with premium motion, strong hierarchy, and clear offers that turn views into booked calls.
           </p>
 
-          <div className={`${visibleClass(isVisible)} mt-8 flex flex-col sm:flex-row gap-3 md:gap-4`} style={{ animationDelay: '0.4s' }}>
+          <div className={`${visibleClass(isVisible)} mt-7 flex flex-col sm:flex-row gap-3 md:gap-4`} style={{ animationDelay: '0.4s' }}>
             <Button href="#contact">Start a chat</Button>
-            <Button href="#work" variant="secondary">See the work</Button>
+            <Button href="#work" variant="secondary">View projects</Button>
+          </div>
+
+          <div className={`${visibleClass(isVisible)} mt-6 flex flex-wrap gap-2`} style={{ animationDelay: '0.5s' }}>
+            <span className="rounded-full border border-zinc-700 bg-zinc-900/55 px-3 py-1 text-xs text-zinc-300">Fast turnarounds</span>
+            <span className="rounded-full border border-zinc-700 bg-zinc-900/55 px-3 py-1 text-xs text-zinc-300">Mobile-first</span>
+            <span className="rounded-full border border-zinc-700 bg-zinc-900/55 px-3 py-1 text-xs text-zinc-300">Conversion-focused</span>
           </div>
         </div>
 
         <div className={`${visibleClass(isVisible)} relative h-[340px] md:h-[460px] split-wrap`} style={{ animationDelay: '0.42s' }}>
-          <div className="split-shell hero-card-tilt">
+          <div className="split-shell hero-card-tilt hero-entry-shell">
             <div className="split-left">
               <img src="/gifs/jj-dominican.gif" alt="Barbershop preview" className="split-media" />
             </div>
@@ -59,8 +66,12 @@ function HeroSection() {
             </div>
           </div>
           <div className="split-orb" />
-          <div className="split-card hero-card-tilt">
+          <div className="split-card hero-card-tilt hero-entry-card">
             <img src="/gifs/serenity-touch.gif" alt="Serenity Touch preview" className="w-full h-full object-cover" />
+          </div>
+          <div className="hero-mini-card">
+            <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400">recent launch</p>
+            <p className="text-sm text-zinc-100 mt-1">Velvet Skin Studio</p>
           </div>
         </div>
       </div>
