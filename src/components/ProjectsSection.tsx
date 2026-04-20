@@ -10,9 +10,9 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: 'CrossFit Pulse',
-    desc: 'Remade a local gym website with stronger conversion flow, pricing clarity, and high-impact visual hierarchy.',
-    image: '/gifs/crossfit-pulse.gif',
+    title: 'Luxury Skincare — Velvet Skin Studio',
+    desc: 'Premium wellness design with refined visual hierarchy, smooth motion, and trust-focused booking flow.',
+    image: '/gifs/luxury-skincare.gif',
   },
   {
     title: 'JJ Dominican Barbershop',
@@ -20,9 +20,9 @@ const projects: Project[] = [
     image: '/gifs/jj-dominican.gif',
   },
   {
-    title: 'Plumbing Rite',
-    desc: 'Trade-service site optimized for urgent leads, clear service tiers, and regional trust positioning.',
-    image: '/gifs/plumbing-rite.gif',
+    title: 'Serenity Touch Massage',
+    desc: 'Calming wellness brand experience with conversion-ready sections and polished responsive presentation.',
+    image: '/gifs/serenity-touch.gif',
   },
 ]
 
