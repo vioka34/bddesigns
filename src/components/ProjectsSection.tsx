@@ -32,13 +32,13 @@ function ProjectItem({ project, idx, visibleClass }: { project: Project; idx: nu
   return (
     <div ref={ref}>
       <div className={`ml-6 md:ml-28 ${visibleClass(isVisible, `${0.1 + idx * 0.1}s`)}`}>
-        <h3 className="font-['PP_Mondwest'] text-2xl md:text-3xl font-semibold text-[#051A24]">{project.title}</h3>
-        <p className="mt-2 text-sm md:text-base text-[#051A24]/70 max-w-xl">{project.desc}</p>
+        <h3 className="font-['PP_Mondwest'] text-2xl md:text-3xl font-semibold text-zinc-100">{project.title}</h3>
+        <p className="mt-2 text-sm md:text-base text-zinc-400 max-w-xl">{project.desc}</p>
       </div>
       <img
         src={project.image}
         alt={project.title}
-        className={`mt-6 w-full rounded-2xl shadow-lg object-cover ${visibleClass(isVisible, `${0.2 + idx * 0.1}s`)}`}
+        className={`mt-6 w-full rounded-2xl shadow-[0_0_24px_rgba(255,255,255,0.1)] object-cover grayscale-[15%] contrast-125 ${visibleClass(isVisible, `${0.2 + idx * 0.1}s`)}`}
         loading="lazy"
       />
     </div>

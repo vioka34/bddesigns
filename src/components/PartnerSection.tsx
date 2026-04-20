@@ -79,20 +79,20 @@ export default function PartnerSection({ visibleClass }: { visibleClass: Visible
       <div
         ref={ref}
         onMouseMove={onMove}
-        className="relative max-w-7xl mx-auto py-32 md:py-48 rounded-[40px] shadow-[0_10px_40px_rgba(0,0,0,0.06)] bg-white overflow-hidden"
+        className="relative max-w-7xl mx-auto py-32 md:py-48 rounded-[40px] shadow-[0_0_50px_rgba(255,255,255,0.08)] bg-zinc-950 border border-zinc-800 overflow-hidden"
       >
         {sparkEls}
         <div className="relative z-10 text-center">
-          <h2 className={`${visibleClass(isVisible, '0.1s')} font-['PP_Mondwest'] text-[48px] md:text-[64px] lg:text-[80px] text-[#0D212C] mb-12`}>
+          <h2 className={`${visibleClass(isVisible, '0.1s')} punk-flicker font-['PP_Mondwest'] text-[48px] md:text-[64px] lg:text-[80px] text-zinc-100 mb-12`}>
             Partner with us
           </h2>
           <Button href="#contact" className={`${visibleClass(isVisible, '0.2s')} inline-flex items-center gap-3`}>
             <img
-              src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=120"
-              alt="Founder"
-              className="w-10 h-10 rounded-full object-cover"
+              src="/punk-avatar.png"
+              alt="Punk avatar"
+              className="w-10 h-10 rounded-full object-cover grayscale contrast-125"
             />
-            Start chat with Brandon
+            Start chat with BDdesigns
           </Button>
         </div>
       </div>

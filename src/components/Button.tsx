@@ -13,11 +13,11 @@ type ButtonProps = {
 
 const variantMap: Record<Variant, string> = {
   primary:
-    'bg-[#051A24] text-white shadow-[0_1px_2px_0_rgba(5,26,36,0.1),0_4px_4px_0_rgba(5,26,36,0.09),0_9px_6px_0_rgba(5,26,36,0.05),0_17px_7px_0_rgba(5,26,36,0.01),0_26px_7px_0_rgba(5,26,36,0),inset_0_2px_8px_0_rgba(255,255,255,0.5)]',
+    'bg-black text-white border border-white/60 shadow-[0_0_0_1px_rgba(255,255,255,0.25),0_0_18px_rgba(255,255,255,0.18),inset_0_0_12px_rgba(255,255,255,0.09)] punk-flicker',
   secondary:
-    'bg-white text-[#051A24] shadow-[0_0_0_0.5px_rgba(0,0,0,0.05),0_4px_30px_rgba(0,0,0,0.08)]',
+    'bg-zinc-900 text-zinc-100 border border-zinc-700 shadow-[0_0_0_0.5px_rgba(255,255,255,0.12),0_4px_30px_rgba(0,0,0,0.55)]',
   tertiary:
-    'bg-white text-[#051A24] shadow-[0_0_0_0.5px_rgba(0,0,0,0.05),0_4px_30px_rgba(0,0,0,0.08)]',
+    'bg-zinc-900 text-zinc-100 border border-zinc-700 shadow-[0_0_0_0.5px_rgba(255,255,255,0.12),0_4px_30px_rgba(0,0,0,0.55)]',
 }
 
 export default function Button({ children, href, variant = 'primary', className = '', target, rel }: ButtonProps) {

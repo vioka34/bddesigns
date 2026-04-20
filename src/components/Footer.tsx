@@ -12,14 +12,14 @@ export default function Footer({ visibleClass, isVisible }: { visibleClass: Visi
         </Button>
 
         <div className={`${visibleClass(isVisible, '0.2s')} flex items-start gap-8`}>
-          <ArrowUpRight className="w-5 h-5 text-[#051A24] mt-1" />
+          <ArrowUpRight className="w-5 h-5 text-zinc-200 mt-1" />
           <div className="grid grid-cols-2 gap-8">
-            <div className="space-y-3 text-base text-[#051A24]">
+            <div className="space-y-3 text-base text-zinc-200">
               <a href="#services" className="block hover:opacity-70 transition">Services</a>
               <a href="#work" className="block hover:opacity-70 transition">Work</a>
               <a href="#about" className="block hover:opacity-70 transition">About</a>
             </div>
-            <div className="space-y-3 text-base text-[#051A24]">
+            <div className="space-y-3 text-base text-zinc-200">
               <a href="https://x.com" target="_blank" rel="noreferrer" className="block hover:opacity-70 transition">x.com</a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="block hover:opacity-70 transition">LinkedIn</a>
             </div>

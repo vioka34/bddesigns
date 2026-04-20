@@ -29,19 +29,19 @@ function HeroSection() {
 
   return (
     <section ref={ref} id="about" className="max-w-[440px] mx-auto px-6 pt-12 md:pt-16">
-      <h1 className={`${visibleClass(isVisible)} font-['PP_Mondwest'] text-[32px] md:text-[40px] lg:text-[44px] font-semibold text-[#051A24] tracking-tight mb-4`} style={{ animationDelay: '0.1s' }}>
+      <h1 className={`${visibleClass(isVisible)} punk-flicker font-['PP_Mondwest'] text-[32px] md:text-[40px] lg:text-[44px] font-semibold text-zinc-100 tracking-tight mb-4`} style={{ animationDelay: '0.1s' }}>
         BDdesigns
       </h1>
-      <p className={`${visibleClass(isVisible)} font-mono text-xs md:text-sm text-[#051A24] mb-2`} style={{ animationDelay: '0.2s' }}>
+      <p className={`${visibleClass(isVisible)} font-mono text-xs md:text-sm text-zinc-400 mb-2`} style={{ animationDelay: '0.2s' }}>
         Independent studio for local business websites
       </p>
-      <h2 className={`${visibleClass(isVisible)} text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] tracking-tight whitespace-nowrap text-[#0D212C]`} style={{ animationDelay: '0.3s' }}>
+      <h2 className={`${visibleClass(isVisible)} text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] tracking-tight whitespace-nowrap text-zinc-100`} style={{ animationDelay: '0.3s' }}>
         Build the <span className="font-['PP_Mondwest']">next level</span>,
         <br />
         the <span className="font-['PP_Mondwest']">bold way.</span>
       </h2>
 
-      <div className={`${visibleClass(isVisible)} mt-5 md:mt-6 flex flex-col gap-6 text-sm md:text-base text-[#051A24] leading-relaxed`} style={{ animationDelay: '0.4s' }}>
+      <div className={`${visibleClass(isVisible)} mt-5 md:mt-6 flex flex-col gap-6 text-sm md:text-base text-zinc-300 leading-relaxed`} style={{ animationDelay: '0.4s' }}>
         <p>
           We redesign and launch high-converting websites for serious local businesses —
           with clear messaging, polished visuals, and smart page structure.
@@ -84,7 +84,7 @@ export default function App() {
   const { ref: footerRef, isVisible: footerVisible } = useInViewAnimation<HTMLDivElement>()
 
   return (
-    <div className="bg-white text-[#051A24] antialiased">
+    <div className="bg-black text-zinc-100 antialiased punk-noise">
       <HeroSection />
       <MarqueeSection />
       <TestimonialSection visibleClass={visibleClass} />
