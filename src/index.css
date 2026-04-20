@@ -250,3 +250,45 @@ html {
   0%, 100% { transform: rotate(-4deg) translateY(0px); }
   50% { transform: rotate(-3deg) translateY(-8px); }
 }
+
+/* Extra hover interactions */
+.hero-card-tilt {
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.55s ease;
+}
+.hero-card-tilt:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.45), 0 0 18px rgba(255,255,255,0.15);
+}
+
+.tilt-card {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease, border-color 0.35s ease;
+}
+.tilt-card:hover {
+  transform: translateY(-8px) rotate(0deg) !important;
+  border-color: rgba(255,255,255,0.35);
+  box-shadow: 0 20px 34px rgba(0,0,0,0.5), 0 0 20px rgba(255,255,255,0.1);
+}
+
+.tilt-card img {
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), filter 0.55s ease;
+}
+.tilt-card:hover img {
+  transform: scale(1.04);
+  filter: grayscale(0%) contrast(1.12);
+}
+
+.price-card {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease, border-color 0.35s ease;
+}
+.price-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(255,255,255,0.35);
+  box-shadow: 0 18px 34px rgba(0,0,0,0.45), 0 0 16px rgba(255,255,255,0.08);
+}
+
+.footer-link {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.footer-link:hover {
+  transform: translateX(3px);
+}

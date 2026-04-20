@@ -48,7 +48,7 @@ function HeroSection() {
         </div>
 
         <div className={`${visibleClass(isVisible)} relative h-[340px] md:h-[460px] split-wrap`} style={{ animationDelay: '0.42s' }}>
-          <div className="split-shell">
+          <div className="split-shell hero-card-tilt">
             <div className="split-left">
               <img src="/gifs/jj-dominican.gif" alt="Barbershop preview" className="split-media" />
             </div>
@@ -57,7 +57,7 @@ function HeroSection() {
             </div>
           </div>
           <div className="split-orb" />
-          <div className="split-card">
+          <div className="split-card hero-card-tilt">
             <img src="/gifs/serenity-touch.gif" alt="Serenity Touch preview" className="w-full h-full object-cover" />
           </div>
         </div>

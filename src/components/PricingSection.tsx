@@ -17,7 +17,7 @@ export default function PricingSection({ visibleClass }: { visibleClass: Visible
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <article className={`${visibleClass(isVisible, '0.25s')} rounded-[28px] border border-zinc-800 bg-zinc-950 p-6`}>
+          <article className={`${visibleClass(isVisible, '0.25s')} price-card rounded-[28px] border border-zinc-800 bg-zinc-950 p-6`}>
             <p className="text-zinc-400 text-xs uppercase tracking-[0.2em]">Starter</p>
             <h3 className="text-zinc-100 text-2xl mt-2">$199</h3>
             <p className="text-zinc-400 text-sm mt-1">one-time build</p>
@@ -31,7 +31,7 @@ export default function PricingSection({ visibleClass }: { visibleClass: Visible
             </div>
           </article>
 
-          <article className={`${visibleClass(isVisible, '0.35s')} rounded-[28px] border border-white/30 bg-black p-6 shadow-[0_0_28px_rgba(255,255,255,0.08)]`}>
+          <article className={`${visibleClass(isVisible, '0.35s')} price-card rounded-[28px] border border-white/30 bg-black p-6 shadow-[0_0_28px_rgba(255,255,255,0.08)]`}>
             <p className="text-zinc-300 text-xs uppercase tracking-[0.2em]">Most Popular</p>
             <h3 className="text-zinc-100 text-3xl mt-2">$399</h3>
             <p className="text-zinc-400 text-sm mt-1">one-time build</p>
@@ -45,7 +45,7 @@ export default function PricingSection({ visibleClass }: { visibleClass: Visible
             </div>
           </article>
 
-          <article className={`${visibleClass(isVisible, '0.45s')} rounded-[28px] border border-zinc-800 bg-zinc-950 p-6`}>
+          <article className={`${visibleClass(isVisible, '0.45s')} price-card rounded-[28px] border border-zinc-800 bg-zinc-950 p-6`}>
             <p className="text-zinc-400 text-xs uppercase tracking-[0.2em]">Premium</p>
             <h3 className="text-zinc-100 text-2xl mt-2">$500</h3>
             <p className="text-zinc-400 text-sm mt-1">max one-time build</p>

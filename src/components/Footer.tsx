@@ -25,13 +25,13 @@ export default function Footer({ visibleClass, isVisible }: { visibleClass: Visi
             <ArrowUpRight className="w-5 h-5 text-zinc-300 mt-1" />
             <div className="grid grid-cols-2 gap-8">
               <div className="space-y-3 text-base text-zinc-200">
-                <a href="#services" className="block hover:opacity-70 transition">Services</a>
-                <a href="#work" className="block hover:opacity-70 transition">Work</a>
-                <a href="#about" className="block hover:opacity-70 transition">About</a>
+                <a href="#services" className="footer-link block hover:opacity-70 transition">Services</a>
+                <a href="#work" className="footer-link block hover:opacity-70 transition">Work</a>
+                <a href="#about" className="footer-link block hover:opacity-70 transition">About</a>
               </div>
               <div className="space-y-3 text-base text-zinc-200">
-                <a href="https://x.com" target="_blank" rel="noreferrer" className="block hover:opacity-70 transition">x.com</a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="block hover:opacity-70 transition">LinkedIn</a>
+                <a href="https://x.com" target="_blank" rel="noreferrer" className="footer-link block hover:opacity-70 transition">x.com</a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="footer-link block hover:opacity-70 transition">LinkedIn</a>
               </div>
             </div>
           </div>

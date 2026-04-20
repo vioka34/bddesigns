@@ -45,7 +45,7 @@ function FancyCard({ project, idx, visibleClass }: { project: Project; idx: numb
   return (
     <article
       ref={ref}
-      className={`${visibleClass(isVisible, `${0.1 + idx * 0.08}s`)} relative rounded-[28px] border border-zinc-800 bg-zinc-950 p-4 md:p-5 shadow-[0_0_24px_rgba(255,255,255,0.08)] ${rotation} ${shift}`}
+      className={`${visibleClass(isVisible, `${0.1 + idx * 0.08}s`)} tilt-card relative rounded-[28px] border border-zinc-800 bg-zinc-950 p-4 md:p-5 shadow-[0_0_24px_rgba(255,255,255,0.08)] ${rotation} ${shift}`}
     >
       <div className={`absolute inset-0 rounded-[24px] bg-gradient-to-br ${project.accent} pointer-events-none`} />
 
