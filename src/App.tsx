@@ -65,13 +65,8 @@ function HeroSection() {
               <img src="/gifs/luxury-skincare.gif" alt="Skincare preview" className="split-media" />
             </div>
           </div>
-          <div className="split-orb" />
           <div className="split-card hero-card-tilt hero-entry-card">
             <img src="/gifs/serenity-touch.gif" alt="Serenity Touch preview" className="w-full h-full object-cover" />
-          </div>
-          <div className="hero-mini-card">
-            <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400">recent launch</p>
-            <p className="text-sm text-zinc-100 mt-1">Velvet Skin Studio</p>
           </div>
         </div>
       </div>
