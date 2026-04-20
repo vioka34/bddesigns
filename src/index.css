@@ -95,6 +95,10 @@ body,
   animation: sparkFade 1000ms ease-out forwards;
 }
 
+.animate-spark-fade-fast {
+  animation: sparkFade 700ms ease-out forwards;
+}
+
 @keyframes punkFlicker {
   0%, 100% { opacity: 1; }
   8% { opacity: 0.78; }

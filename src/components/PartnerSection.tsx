@@ -13,9 +13,11 @@ type Spark = {
 }
 
 const images = [
-  '/gifs/luxury-skincare.gif',
-  '/gifs/jj-dominican.gif',
-  '/gifs/serenity-touch.gif',
+  '/gifs/luxury-skincare-thumb.webp',
+  '/gifs/jj-dominican-thumb.webp',
+  '/gifs/serenity-touch-thumb.webp',
+  '/gifs/crossfit-pulse-thumb.webp',
+  '/gifs/plumbing-rite-thumb.webp',
 ]
 
 export default function PartnerSection({ visibleClass }: { visibleClass: VisibleClass }) {
@@ -32,21 +34,24 @@ export default function PartnerSection({ visibleClass }: { visibleClass: Visible
   const onMove = useCallback(
     (e: MouseEvent<HTMLDivElement>) => {
       const now = performance.now()
-      if (now - lastSpawnRef.current < 80) return
+      if (now - lastSpawnRef.current < 120) return
       lastSpawnRef.current = now
 
       const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect()
       const x = e.clientX - rect.left
       const y = e.clientY - rect.top
       const id = seed.current++
-      const rotate = -10 + Math.random() * 20
+      const rotate = -7 + Math.random() * 14
       const image = pickImage()
 
-      setSparks((prev) => [...prev, { id, x, y, rotate, image }])
+      setSparks((prev) => {
+        const next = [...prev, { id, x, y, rotate, image }]
+        return next.length > 14 ? next.slice(next.length - 14) : next
+      })
 
       window.setTimeout(() => {
         setSparks((prev) => prev.filter((s) => s.id !== id))
-      }, 1000)
+      }, 700)
     },
     [pickImage]
   )
@@ -58,12 +63,14 @@ export default function PartnerSection({ visibleClass }: { visibleClass: Visible
           key={spark.id}
           src={spark.image}
           alt=""
-          className="pointer-events-none absolute w-20 h-14 object-cover rounded-lg animate-spark-fade"
+          className="pointer-events-none absolute w-28 h-16 object-cover rounded-md border border-zinc-700 animate-spark-fade-fast will-change-transform"
           style={{
             left: spark.x,
             top: spark.y,
             transform: `translate(-50%, -50%) rotate(${spark.rotate}deg)`,
           }}
+          loading="lazy"
+          decoding="async"
         />
       )),
     [sparks]
